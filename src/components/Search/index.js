@@ -11,7 +11,7 @@ const Search = ()=>{
 
     return(
         <SearchStyle darkMode={darkMode} Colors={Colors}>
-            <BiSearch/><input type='text' placeholder="Search for a country..."></input>
+            <BiSearch/><input type='search' placeholder="Search for a country..."></input>
         </SearchStyle>
     )
 }

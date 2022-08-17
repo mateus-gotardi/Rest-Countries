@@ -9,9 +9,12 @@ export default function Home() {
         <meta name="description" content="NextJS app that show details about countries with rest countries API" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header/>
-      <Search/>
-      <RegionSelector/>
+      <Header />
+      <div className='filters'>
+        <Search />
+        <RegionSelector />
+      </div>
+
       <ShowAllCountries />
     </div>
   )

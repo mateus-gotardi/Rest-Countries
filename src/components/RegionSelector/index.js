@@ -2,6 +2,7 @@ import { SelectorStyles } from "./styles";
 import { useContext, useState } from "react";
 import AppContext from "../../../AppContext"
 import { Colors } from "..";
+import {AiOutlineDown} from 'react-icons/ai'
 
 const RegionSelector = () => {
     const [dropMenu, setDropMenu] = useState('inactive')
@@ -17,7 +18,7 @@ const RegionSelector = () => {
     }
     return (
         <SelectorStyles darkMode={darkMode} Colors={Colors}>
-            <button className="regionSelector" onClick={handleDropMenu}>{region}</button>
+            <button className="regionSelector" onClick={handleDropMenu}>{region}<AiOutlineDown/></button>
             <ul className={`${dropMenu}`}>
                 <li onClick={()=>handleSelect('Filter By Region')} className='item'>Filter By Region</li>
                 <li onClick={()=>handleSelect('Africa')} className='item'>Africa</li>
