@@ -1,17 +1,7 @@
 import Head from 'next/head'
-import { useState, useEffect } from 'react'
-import api from '../src/services/api'
+import { ShowAllCountries, Header, Search, RegionSelector } from '../src/components'
 
 export default function Home() {
-  const [allCountries, setAllCountries] = useState()
-  async function getAllCountries() {
-    const response = await api.get("/all")
-    console.log(response)
-    setAllCountries(response.data)
-  }
-  useEffect(() => {
-    getAllCountries()
-  }, [])
   return (
     <div>
       <Head>
@@ -19,8 +9,10 @@ export default function Home() {
         <meta name="description" content="NextJS app that show details about countries with rest countries API" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-
+      <Header/>
+      <Search/>
+      <RegionSelector/>
+      <ShowAllCountries />
     </div>
   )
 }
