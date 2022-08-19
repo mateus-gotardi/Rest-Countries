@@ -13,8 +13,9 @@ export default function ShowAllCountries() {
 
     async function getAllCountries() {
         const response = await api.get("/all")
-        setAllCountries(response.data.sort())
-        console.log(response.data)
+        let sortedData = response.data.sort()
+        setAllCountries(sortedData)
+        console.log(sortedData)
     }
     useEffect(() => {
         getAllCountries()
