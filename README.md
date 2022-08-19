@@ -28,13 +28,19 @@ Users should be able to:
 - Toggle the color scheme between light and dark mode
 
 ### Screenshot
+![image](https://user-images.githubusercontent.com/98918812/185683431-92652d7b-4b85-46bc-b702-23919fbe5d07.png)
+![image](https://user-images.githubusercontent.com/98918812/185684275-681a879e-502f-494d-abde-091ed628750b.png)
+
+
+![image](https://user-images.githubusercontent.com/98918812/185683515-62c1c273-4e6b-4a36-8d90-836cdfb07d5b.png)
+![image](https://user-images.githubusercontent.com/98918812/185683757-a904cce3-7664-4b78-9ff7-294491ecc6e5.png)
 
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution on Front-end-mentor](https://www.frontendmentor.io/solutions/responsive-crountry-list-x4Jk3-BaDo)
+- Live Site URL: [Vercel APP](https://countries-of-the-world-two.vercel.app)
 
 ## My process
 I started reading the API documentation to understand how to fetch the data and how to use it to show the fields I wanted.
