@@ -13,9 +13,11 @@ export default function ShowAllCountries() {
 
     async function getAllCountries() {
         const response = await api.get("/all")
-        let sortedData = response.data.sort()
-        setAllCountries(sortedData)
-        console.log(sortedData)
+        response.data.sort(function(a,b) {
+            return a.name.common < b.name.common ? -1 : a.name.common > b.name.common ? 1 : 0;
+        });
+        setAllCountries(response.data)
+        console.log(response.data)
     }
     useEffect(() => {
         getAllCountries()
