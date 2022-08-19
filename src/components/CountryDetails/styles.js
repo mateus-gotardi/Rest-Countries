@@ -6,6 +6,7 @@ display: flex;
 flex-direction: column;
 gap: 1.5rem;
 .backButton{
+    cursor: pointer;
     box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.1);
     border-radius: 3px;
     display: flex;
