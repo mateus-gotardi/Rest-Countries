@@ -13,6 +13,7 @@ img{
     border-radius: 5px 5px 0 0;
 }
 .card{
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content:space-between;
@@ -21,7 +22,6 @@ img{
     box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.1);
     .details{
         padding: 1.3rem;
-        
     }
 }
 @media (min-width: 750px) {
@@ -29,7 +29,6 @@ img{
     width: 100%;
     height: 50%;
     border-radius: 5px 5px 0 0;
-    overflow: hidden;
 }
 img{
     width: 100%;
@@ -43,6 +42,9 @@ grid-template-columns: 47.5% 47.5%
 grid-template-columns: 30% 30% 30%
 }
 @media (min-width: 1080px) {
+.card{
+    height: 20rem;
+}
 grid-template-columns: 21.25% 21.25% 21.25% 21.25%
 }
 

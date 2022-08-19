@@ -1,17 +1,19 @@
 import React from "react";
 import { SearchStyle } from "./styles";
-import {BiSearch} from 'react-icons/bi'
+import { BiSearch } from 'react-icons/bi'
 import { useContext } from "react"
 import AppContext from "../../../AppContext"
 import { Colors } from "..";
 
-const Search = ()=>{
+const Search = () => {
     const value = useContext(AppContext)
-    let { darkMode } = value.state
+    let { darkMode, search } = value.state
+    const { setSearch } = value
 
-    return(
+    return (
         <SearchStyle darkMode={darkMode} Colors={Colors}>
-            <BiSearch/><input type='search' placeholder="Search for a country..."></input>
+            <BiSearch /><input type='text' placeholder="Search for a country..."
+                value={search} onChange={e => setSearch(e.target.value)}></input>
         </SearchStyle>
     )
 }
