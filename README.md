@@ -44,7 +44,7 @@ Users should be able to:
 
 ## My process
 I started reading the API documentation to understand how to fetch the data and how to use it to show the fields I wanted.
-Then started building the homepage with Mobile First approach, I used ContextAPI to change between dark and light mode and for the filtering.
+Then started building the homepage with Mobile First approach, I used Styled-Components working with ContextAPI to change between dark and light mode and for the filtering.
 ### Built with
 
 - Semantic HTML5 markup
