@@ -58,7 +58,10 @@ const CountryDetails = () => {
                         <Title className='CountryName'>{countryDetails[0].name.common}</Title>
                         <div className='details'>
                             <div className='first-details'>
-                                <Text><b>Native Name:&nbsp;</b>{countryDetails[0].altSpellings[1]}</Text>
+                                {countryDetails[0].altSpellings[1]?
+                                    <Text><b>Native Name:&nbsp;</b>{countryDetails[0].altSpellings[1]}</Text>:
+                                    <Text><b>Native Name:&nbsp;</b>{countryDetails[0].altSpellings[0]}</Text>
+                                }
                                 <Text><b>Population:&nbsp;</b>{countryDetails[0].population}</Text>
                                 <Text><b>Region:&nbsp;</b>{countryDetails[0].region}</Text>
                                 <Text><b>Sub Region:&nbsp;</b>{countryDetails[0].subregion}</Text>
