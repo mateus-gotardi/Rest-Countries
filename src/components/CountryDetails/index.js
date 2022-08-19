@@ -60,17 +60,17 @@ const CountryDetails = () => {
                             <div className='first-details'>
                                 {countryDetails[0].altSpellings[1]?
                                     <Text><b>Native Name:&nbsp;</b>{countryDetails[0].altSpellings[1]}</Text>:
-                                    <Text><b>Native Name:&nbsp;</b>{countryDetails[0].altSpellings[0]}</Text>
+                                    <Text><b>Native Name:&nbsp;</b>{countryDetails[0].name.common}</Text>
                                 }
-                                <Text><b>Population:&nbsp;</b>{countryDetails[0].population}</Text>
+                                {countryDetails[0].population && <Text><b>Population:&nbsp;</b>{countryDetails[0].population}</Text>}
                                 <Text><b>Region:&nbsp;</b>{countryDetails[0].region}</Text>
                                 <Text><b>Sub Region:&nbsp;</b>{countryDetails[0].subregion}</Text>
                                 <Text><b>Capital:&nbsp;</b>{countryDetails[0].capital}</Text>
                             </div>
                             <div className='moreDetails'>
                                 <Text><b>Top Level Domain:&nbsp;</b>{countryDetails[0].tld}</Text>
-                                <ShowObjectInText obj='currencies' />
-                                <ShowObjectInText obj='languages' />
+                                {countryDetails[0].currencies && <ShowObjectInText obj='currencies' />}
+                                {countryDetails[0].languages && <ShowObjectInText obj='languages' />}
                             </div>
                             <div className="borders">
                                 <Text><b>Border Countries:</b></Text>
