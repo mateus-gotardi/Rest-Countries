@@ -77,9 +77,11 @@ const CountryDetails = () => {
                                 <div className="border-grid">
                                     {countryDetails[0].borders && countryDetails[0].borders.map((border) => {
                                         return (
-                                            <div key={border} className="border">
-                                                <Text ><Link href={'/getDetails?country=' + border}>{border}</Link></Text>
-                                            </div>
+                                            <Link key={border} href={'/getDetails?country=' + border}>
+                                                <div  className="border">
+                                                    <Text >{border}</Text>
+                                                </div>
+                                            </Link>
                                         )
                                     })
                                     }
