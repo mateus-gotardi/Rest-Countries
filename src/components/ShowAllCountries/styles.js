@@ -30,10 +30,11 @@ img{
     width: 100%;
     height: 50%;
     border-radius: 5px 5px 0 0;
+    overflow:hidden;
 }
 img{
     width: 100%;
-    aspect-ratio:auto
+    aspect-ratio:auto;
 }
 gap: 3.5rem 5% ;
 display: grid;
