@@ -6,10 +6,10 @@ flex-direction: column;
 gap: 2rem;
 padding: 2rem 3.5rem;
 font-size: 14px;
+max-width: 1920px;
 
 img{
     width: 100%;
-    height: auto;
     border-radius: 5px 5px 0 0;
     aspect-ratio:auto
 }
