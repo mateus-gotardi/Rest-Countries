@@ -6,13 +6,8 @@ flex-direction: column;
 gap: 2rem;
 padding: 2rem 3.5rem;
 font-size: 14px;
-max-width: 1920px;
-
-img{
-    width: 100%;
-    border-radius: 5px 5px 0 0;
-    aspect-ratio:auto
-}
+max-width: 1440px;
+margin: 0 auto;
 .card{
     cursor: pointer;
     display: flex;
@@ -25,17 +20,16 @@ img{
         padding: 1.3rem;
     }
 }
-@media (min-width: 750px) {
-.flag{
-    width: 100%;
-    height: 50%;
-    border-radius: 5px 5px 0 0;
-    overflow:hidden;
-}
 img{
     width: 100%;
     aspect-ratio:auto;
 }
+.flag{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    overflow:hidden;
+}
+@media (min-width: 750px) {
 gap: 3.5rem 5% ;
 display: grid;
 grid-template-columns: 47.5% 47.5%
